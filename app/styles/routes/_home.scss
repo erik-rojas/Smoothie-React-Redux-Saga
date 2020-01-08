@@ -1,0 +1,497 @@
+.app-home {
+  background-color: #ffffff;
+
+  &-header {
+    height: 133px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-bottom: 24px;
+    background-position: right;
+    background-image: url("../../assets/media/images/oval.png");
+    background-repeat: no-repeat;
+
+    .logo-section {
+      display: flex;
+      width: 80.903%;
+      height: 48px;
+      margin-left: 9.722%;
+
+      .logo-content {
+        margin-top: 4px;
+      }
+    }
+
+    .button-section {
+      min-width: 189px;
+      width: 189px;
+      height: 48px;
+      border-radius: 25px;
+      background-color: white;
+      margin-right: 9.375%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .access-btn {
+        text-transform: uppercase;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-align: center;
+        color: #002df0;
+      }
+
+      .menu-btn {
+        display: none;
+        width: 26px;
+        height: 19px;
+        background-image: url("../../assets/media/images/menu-button.png");
+      }
+    }
+  }
+
+  &-background-left-sm {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &-background-right-sm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &-title {
+    display: flex;
+    justify-content: center;
+    font-family: Poppins;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 0.92;
+    text-align: center;
+    color: #0014dd;
+    margin-bottom: 35px;
+    z-index: 3;
+  }
+
+  &-intro {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.94;
+    text-align: center;
+    color: #0014dd;
+    margin: auto;
+    margin-bottom: 50px;
+    z-index: 3;
+  }
+
+  &-subscribe {
+    background: rgba(151, 151, 151, 0.2);
+    border-radius: 50px;
+    min-width: 630px;
+    width: 630px;
+    height: 57px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+
+    .text-section {
+      display: flex;
+      width: calc(100% - 232px);
+
+      .text-field {
+        width: calc(100% - 40px);
+        margin-left: 30px;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 300;
+        background: transparent;
+        border: none;
+        outline: none;
+        z-index: 4;
+
+        ::placeholder {
+          color: #9b9b9b;
+        }
+      }
+    }
+
+    .button-section {
+      display: flex;
+      min-width: 232px;
+      width: 232px;
+      height: 49px;
+      border-radius: 50px;
+      background-image: linear-gradient(to top, #002df0, #0014dd);
+      z-index: 4;
+
+      .subscribe-btn {
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-transform: uppercase;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        text-align: center;
+      }
+
+      .subscribe-btn:disabled {
+        font-weight: normal;
+      }
+    }
+  }
+
+  &-subscribe-sm {
+    display: none;
+    width: 61.87%;
+    height: 116px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .text-section-sm {
+      display: flex;
+      width: 100%;
+      height: 48px;
+      border-radius: 50px;
+      background: rgba(151, 151, 151, 0.2);
+      z-index: 4;
+
+      .text-field-sm {
+        width: calc(100% - 40px);
+        margin-left: 30px;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 300;
+        background: transparent;
+        border: none;
+        outline: none;
+
+        ::placeholder {
+          color: #9b9b9b;
+        }
+      }
+    }
+
+    .button-section-sm {
+      display: flex;
+      width: 100%;
+      height: 48px;
+      border-radius: 50px;
+      background-image: linear-gradient(to top, #002df0, #0014dd);
+      z-index: 4;
+
+      .subscribe-btn-sm {
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-transform: uppercase;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        text-align: center;
+      }
+
+      .subscribe-btn-sm:disabled {
+        font-weight: normal;
+      }
+    }
+  }
+
+  &-background {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 610px;
+    position: relative;
+    margin-top: -80px;
+    background: url("../../assets/media/images/oval-bottom.png") no-repeat;
+    background-position: center bottom;
+    background-size: 100%;
+
+    &-leftOval {
+      position: absolute;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: url("../../assets/media/images/oval-left.png") no-repeat;
+      background-position: left bottom;
+      background-size: auto;
+    }
+
+    &-rightOval {
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      background: url("../../assets/media/images/oval-right.png") no-repeat;
+      background-position: right bottom;
+      background-size: auto;
+    }
+
+    &-center {
+      position: absolute;
+      z-index: 3;
+      width: 100%;
+      height: 100%;
+      background: url("../../assets/media/images/screely-1541410516809.png")
+        no-repeat;
+      background-position: center bottom;
+      background-size: auto;
+    }
+  }
+
+  &-workedLogos {
+    display: flex;
+    height: 122px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+
+    .text-section {
+      display: flex;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 2.19;
+      justify-content: center;
+      color: #0014dd;
+    }
+
+    .logos-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+
+      .logo-reeport {
+        width: 210px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo-algolia {
+        width: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo-riseup {
+        width: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo-mon {
+        width: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    &-title {
+      font-size: 33px;
+    }
+
+    &-intro {
+      width: 700px;
+    }
+
+    &-subscribe {
+      min-width: 570px;
+      width: 570px;
+    }
+
+    &-background {
+      height: 440px;
+      margin-top: 0px;
+
+      &-leftOval {
+        background-size: 228px 376px;
+      }
+
+      &-rightOval {
+        background-size: 455px 439px;
+      }
+
+      &-center {
+        background-size: 600px 330px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &-background-left-sm {
+      height: 418px;
+      position: absolute;
+      background: url("../../assets/media/images/oval-left-sm.png") no-repeat;
+      background-position: left bottom;
+    }
+
+    &-background-right-sm {
+      height: 418px;
+      position: relative;
+      background: url("../../assets/media/images/oval-right-sm.png") no-repeat;
+      background-position: right bottom;
+    }
+
+    &-title {
+      font-size: 30px;
+      z-index: 3;
+    }
+
+    &-intro {
+      width: 500px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    &-subscribe {
+      display: none;
+    }
+
+    &-subscribe-sm {
+      display: flex;
+    }
+
+    &-background {
+      display: none;
+    }
+
+    &-workedLogos {
+      height: 221px;
+      margin-bottom: 0px;
+
+      .logos-section {
+        flex-wrap: wrap;
+        height: 170px;
+
+        .logo-reeport {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .logo-algolia {
+          width: 50%;
+        }
+
+        .logo-riseup {
+          width: 40%;
+        }
+
+        .logo-mon {
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 592px) {
+    &-header {
+      background-image: url("../../assets/media/images/oval-sm.png");
+
+      .button-section {
+        background-color: rgba(0, 0, 0, 0);
+        min-width: 26px;
+        width: 26px;
+        height: 48px;
+        margin-right: 9.375%;
+
+        .access-btn {
+          display: none;
+        }
+
+        .menu-btn {
+          display: flex;
+        }
+      }
+    }
+
+    &-title {
+      min-width: 365px;
+      font-size: 27px;
+      line-height: 1.67;
+    }
+
+    &-intro {
+      width: 335px;
+      min-width: 335px;
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    &-workedLogos {
+      height: 221px;
+      margin-bottom: 0px;
+  
+      .text-section {
+        font-size: 12px;
+        line-height: 2.92;
+      }
+  
+      .logos-section {
+        flex-wrap: wrap;
+  
+        .logo-reeport {
+          width: 100%;
+          order: 3;
+  
+          .logo-content {
+            width: 113px;
+          }
+        }
+  
+        .logo-algolia {
+          width: 100%;
+          order: 1;
+  
+          .logo-content {
+            width: 105px;
+          }
+        }
+  
+        .logo-riseup {
+          display: none;
+        }
+  
+        .logo-mon {
+          width: 100%;
+          order: 2;
+  
+          .logo-content {
+            width: 135px;
+          }
+        }
+      }
+    }
+  }
+}

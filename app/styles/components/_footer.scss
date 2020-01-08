@@ -1,0 +1,52 @@
+.app-footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  &-logo {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-image: url("../../assets/media/images/footer-background.png");
+    background-repeat: no-repeat;
+
+    .logo-section {
+      display: flex;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 2.19;
+      margin-top: 23px;
+      justify-content: center;
+      color: #0014dd;
+
+      .logo-content {
+        width: 149px;
+      }
+    }
+
+    .text-section {
+      display: flex;
+      font-family: Poppins;
+      font-size: 13px;
+      font-weight: 300;
+      justify-content: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: #0014dd;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    &-logo {
+      .logo-section {
+        margin-top: 26px;
+      }
+      
+      .text-section {
+        font-size: 10px;
+      }
+    }
+  }
+}
